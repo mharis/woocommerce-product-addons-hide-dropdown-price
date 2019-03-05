@@ -101,3 +101,13 @@ function hariszulfiqar_woocommerce_product_addons_hide_price_from_totals() {
 	endif;
 }
 add_action( 'wp_head', 'hariszulfiqar_woocommerce_product_addons_hide_price_from_totals' );
+
+/**
+ * Hide price from order details.
+ *
+ * @return boolean
+ */
+function hariszulfiqar_woocommerce_product_addons_hide_price_from_order_details() {
+	return false;
+}
+add_filter( 'woocommerce_addons_add_price_to_name', 'hariszulfiqar_woocommerce_product_addons_hide_price_from_order_details' );
