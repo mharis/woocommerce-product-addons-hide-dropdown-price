@@ -105,6 +105,8 @@ add_action( 'wp_head', 'hariszulfiqar_woocommerce_product_addons_hide_price_from
 /**
  * Hide price from order details.
  *
+ * @since 1.0.0
+ * @author Haris Zulfiqar <haris@hariszulfiqar.com>
  * @return boolean
  */
 function hariszulfiqar_woocommerce_product_addons_hide_price_from_order_details() {
